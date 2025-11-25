@@ -1,0 +1,36 @@
+body::-webkit-scrollbar {
+    width: 0.0em;
+    background-color: #F5F5F5;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+ 
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
+
+.background-container {
+  background-color: #efefef;
+  min-height: 100vh;  
+}
+
+@media screen and (max-width:420px) {
+  .background-container {
+    background-color: #ffffff;
+    min-height: 100vh;  
+  }
+
+  .spacing-div {
+    height: 50px !important;
+
+  }
+
+}
+
+/* Disable Title from navbar */
+/* .tool-bar-title {
+  display: none !important;
+} */
+
