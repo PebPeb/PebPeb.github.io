@@ -1,0 +1,20 @@
+.general-content {
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.spacing-div {
+    height: 40px;
+}
