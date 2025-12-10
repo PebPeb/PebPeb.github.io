@@ -4,65 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="static/style.css">
-    <link rel="stylesheet" type="text/css" href="static/TitleCard.css">
-    <link rel="stylesheet" type="text/css" href="static/NavBar.css">
-    <link rel="stylesheet" type="text/css" href="static/CardLandscape.css">
-    <link rel="stylesheet" type="text/css" href="static/HomePage.css">
-    <link rel="stylesheet" type="text/css" href="static/GeneralStyle.css">
-    <link rel="stylesheet" href="static/fontawesome/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/GeneralStyle.css">
+    <link rel="stylesheet" type="text/css" href="/static/TitleCard.css">
+    <link rel="stylesheet" type="text/css" href="/static/CardLandscape.css">
+    <link rel="stylesheet" type="text/css" href="/static/HomePage.css">
+    <link rel="stylesheet" href="/static/fontawesome/all.min.css">
     
     <title>Bryce Keen</title>
   </head>
   
   <body>
     <div class="background-container">
-      <nav class="navbar">
-      <ul>
-        <li>
-          <div class="tool-bar-title">Bryce Keen</div>
-        </li>
-
-        <li id="nav-link-mobile">
-          <div class="link-container">
-            <!-- <FontAwesomeIcon class="mobile-bars" icon={faBars}/> -->
-          </div>
-
-          <ul class="mobile-dropdown">
-            <!-- {myLinks.map((element, i) => 
-              <li id="nav-links"
-                  key={i} 
-                  style={{marginLeft: once ? 'auto' : '', 
-                          display: showDropdown ? 'block' : 'none'}}> 
-
-                {once = false}
-                {props.external ? 
-                (
-                    <a href={element.link} style={{textDecoration: 'none'}}>
-                      <div class="link-container" style={{marginLeft: 'auto'}}>{element.title}</div>
-                    </a>
-                ) : 
-                (
-                    <a></a>
-                    // <Link to={element.link} style={{textDecoration: 'none'}}>
-                    //   <div class="link-container">{element.title}</div>
-                    // </Link>
-                )}
-              </li>
-            )} -->
-          </ul>
-        </li>
-
-        <div id="nav-links-container" style="margin-left: auto;">
-            <li id="nav-links" style="margin-left: auto;">
-              <a href="" style="text-decoration: none;">
-                <div class="link-container">TEST</div>
-              </a>
-            </li>
-        </div>
-      </ul>
-      </nav>
-
+      <nav class="navbar"></nav>
 
       <div class="title_003" style="background-image: url(assets/BlueCircuit.png); backgroundPosition: '0px 55%'">
         <div class="blur">
@@ -74,14 +28,14 @@
             <a class="logo-link" href="https://github.com/PebPeb">
               <i class="icon fa-brands fa-github"></i>
             </a>
-            <a class="logo-link" href="https://github.com/PebPeb">
+            <a class="logo-link" href="https://www.linkedin.com/in/bryce-keen/">
               <i class="icon fa-brands fa-linkedin"></i>
             </a>
           </div>
         </div>
       </div>
 
-       <div class="general-content">
+      <div class="general-content">
         <div class="spacing-div"></div>
         <div class="card-landscape right">
           <a href="https://github.com/PebPeb/BEAN-2" id="a-container" style="text-decoration: none;">
@@ -103,5 +57,7 @@
         </div>
        </div>
     </div>
+
+    <script src="/navbar/navbar.js"></script>
   </body>
 </html>
