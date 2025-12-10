@@ -1,4 +1,4 @@
-fetch("/navbar/navbar.html")
+fetch("/modules/navbar/navbar.html")
   .then(response => {
     if (!response.ok) {
       console.error("Fetch error:", response.status, response.statusText);
