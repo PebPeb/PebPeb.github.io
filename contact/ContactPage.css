@@ -1,0 +1,32 @@
+
+
+.contact-content {
+    max-width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 1px;
+
+
+    background-color: #FFFFFF;
+}
+
+
+.contact-content p{
+    color: #3d3d3d;
+}
+.contact-content h1{
+    color: rgb(50, 50, 50);
+}
+
+
+
+.email a {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+}
