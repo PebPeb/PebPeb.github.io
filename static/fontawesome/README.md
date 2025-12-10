@@ -1,0 +1,1 @@
+[Fontawesome](https://fontawesome.com/) is an internet library full of different icons. Refer to the link for any information on the project.
