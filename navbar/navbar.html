@@ -1,0 +1,50 @@
+<link rel="stylesheet" type="text/css" href="/static/NavBar.css">
+
+<ul>
+  <li>
+    <div class="tool-bar-title">{{bar_title}}</div>
+  </li>
+
+  <li id="nav-link-mobile">
+    <div class="link-container">
+      <!-- <FontAwesomeIcon class="mobile-bars" icon={faBars}/> -->
+    </div>
+
+    <ul class="mobile-dropdown">
+      <!-- {myLinks.map((element, i) => 
+        <li id="nav-links"
+            key={i} 
+            style={{marginLeft: once ? 'auto' : '', 
+                    display: showDropdown ? 'block' : 'none'}}> 
+
+          {once = false}
+          {props.external ? 
+          (
+              <a href={element.link} style={{textDecoration: 'none'}}>
+                <div class="link-container" style={{marginLeft: 'auto'}}>{element.title}</div>
+              </a>
+          ) : 
+          (
+              <a></a>
+              // <Link to={element.link} style={{textDecoration: 'none'}}>
+              //   <div class="link-container">{element.title}</div>
+              // </Link>
+          )}
+        </li>
+      )} -->
+    </ul>
+  </li>
+
+  <div id="nav-links-container" style="margin-left: auto;">
+    <li id="nav-links" style="margin-left: auto;">
+      <a href="/" style="text-decoration: none;">
+        <div class="link-container">Home</div>
+      </a>
+    </li>
+    <li id="nav-links" style="margin-left: auto;">
+      <a href="/contact/" style="text-decoration: none;">
+        <div class="link-container">Contact</div>
+      </a>
+    </li>
+  </div>
+</ul>
