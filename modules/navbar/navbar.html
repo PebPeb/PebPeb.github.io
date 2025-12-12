@@ -2,15 +2,20 @@
 
 <ul>
   <li>
-    <div class="tool-bar-title">{{bar_title}}</div>
+    <div class="tool-bar-title" style="display: none; ">{{bar_title}}</div>
   </li>
 
   <li id="nav-link-mobile">
     <div class="link-container">
-      <!-- <FontAwesomeIcon class="mobile-bars" icon={faBars}/> -->
+      <i class="mobile-bars fa-solid fa-bars"></i>
     </div>
 
     <ul class="mobile-dropdown">
+      <li id="nav-links">
+        <a href="/" style="text-decoration: none;">
+          <div class="link-container" style="margin-left: auto;">Home</div>
+        </a>
+      </li>
       <!-- {myLinks.map((element, i) => 
         <li id="nav-links"
             key={i} 
