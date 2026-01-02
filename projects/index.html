@@ -4,18 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/static/style.css">
-  <link rel="stylesheet" type="text/css" href="/static/GeneralStyle.css">
+  <link rel="stylesheet" type="text/css" href="/static/general-content.css">
   <link rel="stylesheet" type="text/css" href="projects.css">
 
   <title>BK - Projects</title>
 </head>
-<body>
+<body class="flex-column">
   <div class="background-container">
     <nav class="navbar" bar-title="Bryce Keen"></nav>
     
+    <!-- Contains main content -->
+    <div class="projects-container flex-row">
+      <div class="projects-menu">
+        Temp Holder
+      </div>
+      
+      <div class="projects-artical-container">
+        <article class="content">
+          <section>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+          </section>
+        </article>
+      </div>
+    </div>
+
+  <script src="/modules/navbar/navbar.js"></script>
+</body>
+</html>
+
+<!--     
     <div class="display-container">
+
+
+
+
+
       <div class="display left">
-        <!-- {% include 'search.html' %} -->
+        {% include 'search.html' %}
+        <div style="min-width: 280px;"></div>
         <p>Search Temp Holder</p>
       </div>
       <div class="display holder">
@@ -26,15 +70,11 @@
             <p>Im indecent</p>
           </section>
         </div>
+        <div class="display right">
       </div>
-      <div class="display right">
 
       </div>
   </div>
-  <script src="/modules/navbar/navbar.js"></script>
-</body>
-</html>
-
 
     <div class="display-container">
         <div class="display left">
@@ -52,9 +92,9 @@
                 <h1 class="entry-title">
                         <a href="/{{ article.url }}">{{ article.title }}</a>
                     </h1>
-                    {% include 'article_infos.html' %}<!-- /.post-info -->
+                    {% include 'article_infos.html' %}/.post-info
                     {{ article.content }}
-                </article></aside><!-- /#featured -->
+                </article></aside>/#featured
                 
                 {% if loop.length  > 1 %}
                 <div style="height: 20px;"></div>
@@ -77,17 +117,17 @@
                         </header>
                         
                         <div class="entry-content">
-                            {% include 'article_infos.html' %}<!-- /.post-info -->
+                            {% include 'article_infos.html' %}/.post-info
                             {{ article.summary }}
                             <a class="readmore" href="/{{ article.url }}">read more</a>
-                        </div><!-- /.entry-content -->
+                        </div>/.entry-content
                     </article></li>
                     
                     {% endif %}
                     {% endfor %}
                     
-                </ol><!-- /#posts-list -->
-</section><!-- /#content -->
+                </ol>/#posts-list
+</section>/#content
 {% else %}
 
 <section id="content" class="body">
@@ -106,4 +146,4 @@
     </div>
 </div>
 <div>
-
+ -->
