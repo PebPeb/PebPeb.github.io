@@ -1,19 +1,12 @@
+:root {
+  --content-width: 1020px;
+}
+
 
 .general-content {
   max-width: 940px;
   margin-right: auto;
   margin-left: auto;
-}
-
-p {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-h1 {
-  font-size: 40px;
 }
 
 .spacing-div {
@@ -22,23 +15,43 @@ h1 {
 
 
 @font-face {
-    font-family: DejaVuSerif;
-    src: url(/assets/fonts/DejaVuSerif.ttf);
-  }
+  font-family: DejaVuSerif;
+  src: url(/assets/fonts/DejaVuSerif.ttf);
+}
 
 @font-face {
+  font-family: DejaVuSerif-Bold;
+  src: url(/assets/fonts/DejaVuSerif-Bold.ttf);
+}
+
+/*******************************************/
+/* Content Style */
+/*******************************************/
+
+  .content :is(h1, h2, h3, h4, h5, h6) {
+    font-weight: 400;
+    line-height: 1.1;
     font-family: DejaVuSerif-Bold;
-    src: url(/assets/fonts/DejaVuSerif-Bold.ttf);
-}
+  }
+  .content p, .content li {
+    color: #3d3d3d;
+    font-size: 18px;
+    font-family: DejaVuSerif;
+    line-height: 1.5;
+  }
 
-.content :is(h1, h2, h3, h4, h5, h6) {
-	font-weight: 400;
-	line-height: 1.1;
-	font-family: DejaVuSerif-Bold;
-}
+  .content h1 {
+    color: rgb(16, 58, 103);
+    margin: 28.6px 0;
+    font-size: 40px;
+  }
 
-.content h1 {
-	color: rgb(16, 58, 103);
-	margin: 28.6px 0;
-	font-size: 40px;
-}
+  postdate {
+    font-size: 16px;
+    font-family: DejaVuSerif-Bold;
+    margin-bottom: 16px;
+    text-align: left;
+    color: #323223;
+  }
+
+/*******************************************/

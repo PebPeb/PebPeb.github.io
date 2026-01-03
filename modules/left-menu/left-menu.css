@@ -1,0 +1,35 @@
+
+:root {
+  --projects-menu-width: 280px;
+}
+
+.left-menu {
+	min-width: var(--projects-menu-width); 
+	max-width: var(--projects-menu-width);
+}
+
+#searchInput {
+	border-radius: 50px;
+	font-size: 15px;
+	padding: 6px 12px;
+	width: 80%;
+	font-family: DejaVuSerif;
+
+	background-color: rgba(24, 44, 66);
+	color: #cccccc;
+
+	/* border: none; */
+	border-top: 1px solid rgb(20, 37, 54);
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+#inputdiv {
+	/* background-color: #042c46; */
+	/* background-color: rgb(19,35,52); */
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/* background-color: rgb(14, 26, 39); */
+	background-image: linear-gradient(to top left, rgb(28, 63, 94), rgb(14, 26, 39));
+}

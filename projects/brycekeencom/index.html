@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link rel="stylesheet" type="text/css" href="/static/general-content.css">
+  <link rel="stylesheet" type="text/css" href="/projects/projects.css">
+  <title>BK - BryceKeen.com</title>
+</head>
+<body>
+  <div class="background-container flex-column">
+
+    <nav class="navbar" bar-title="Bryce Keen"></nav>
+
+    <div class="projects flex-row">
+      <div class="left-menu flex-row" style="background-color: black;">
+         
+      </div>
+
+      <div class="projects-article flex-column">
+        <article class="content">
+          <h1>BryceKeen.com</h1>
+          <section>
+            <postdate>Sun 10 December 2023</postdate>
+            <p>Just over a year ago I started this project not knowing a single thing about web development. Going from not knowing a thing to now making my first official release, (a little arbitrary since I am the only one working on it) it has been quite the milestone for me. Though to be honest, web development is definitely not my forte. I have made my fair share of mistakes, and learned some important engineering techniques the hard way. Which I will definitely be carrying over to my next projects. One other thing that I have gained from this project is a new found respect for web developers along with a touch of annoyance. As for me, I think I will stick to working with low level systems.</p>
+            
+            <h2>BryceKeen.com v1.0.0</h2>
+            
+            <p>This website was made from scratch as a project aimed for hosting my different projects and things that are interesting to me. The tools to accomplish this were selected primarily out of ignorance of the realm of web development. Though each tool was added gradually to solve a specific problem. The end result was an unnecessarily complex system. You can view the code <a href="https://github.com/PebPeb/my-website">here on Github</a>. Without further ado, I present to you <a href="https://brycekeen.com">BryceKeen.com</a>.</p>
+            <p><img class="center" src="/projects/brycekeencom/BryceKeenWebsite.png" style="max-width: 90%;" ></img></p>
+            <p>This website started out originally on Wordpress, though through a variety of decisions that quickly changed. From those decisions this website has grown to be powered by five major tools in addition to basic HTML, CSS, and Javascript.</p>
+            <ol>
+                <li>React</li>
+                <li>Webpack</li>
+                <li>Nodejs</li>
+                <li>Pelican</li>
+                <li>Jinja2</li>
+            </ol>
+
+            <p>The addition of <a href="https://React.dev/">React</a> was originally to provide a more object oriented style of programming. You can see some of the big components done with React such as the navigation bar (<em>navbar</em>) and the <em>home</em> page. Though with React comes the issue of search engine optimization (SEO). Having everything in Javascript requires server side rendering, if there was any hope for search engines to index the site. This problem was not known until many of the major components were developed. Therefore, it was not solved until later.</p>
+
+            <p><a href="https://webpack.js.org/">Webpack</a> was initially added in as a bundler for the React components. At the time I did not have a full understanding of both React and Webpack and began to include more components into Webpack than React. Later as the system grew and more tools were added, Webpack started to became more of an hinderance than a help. With <a href="https://Nodejs.org/en">Nodejs</a> being Webpack's primary compiler this made the site heavily dependent on it, for both development and deployment. </p>
+
+            <p><img class="center" src="/projects/brycekeencom/pelican.png" style="max-width: 60%;" ></img></p>
+
+            <p>As for <a href="https://getpelican.com/">Pelican</a>, it was the last tool to be added to the site. Pelican takes advantage of <a href="https://jinja.palletsprojects.com/en/3.1.x/">Jinja2</a> templates and I was able to leverage these templates outside of Pelican. Looking back this probably should have been my primary approach since I ended up going with more of a static site. Moving to a static site also ended up solving my SOE problem. With all the content of the site being static there was no need for server side rendering.</p>
+
+            <p>It was definitely a different challenge for me taking on some web development. Though it is not perfect, and I probably learned more of how <em>not</em> to design a website; I am proud of what I was able to accomplish.</p>
+
+            <h2>Lessons Learned</h2>
+            <ul>
+              <li>"Did I find the simplest solution?" - Asking that question more along the way would have saved me some time and headaches. However, a lot of these issues may have stemmed from my lack of knowledge.</li>
+              <li>Planning - Having a better road map initial would have solved a lot of the problems I encountered earlier on. It would have also helped with eliminating some of the unnecessary complexity introduced into the system.</li>
+              <li>Tools - Sticking to as few technologies as possible and only adding new tools if necessary; this ended up being the main source of complexity. If I stuck to Python libraries like Django, Pelican and Jinja2 it would probably would have reduced complexity.</li>
+              <li>In the future I should just use Wordpress (no need to reinvent the wheel).</li>
+            </ul>
+            <h2>Purpose</h2>
+            <p>But why do all this work to build a website, learn all these lessons, and go through so much trouble? Well there are a few overarching goals I hoped to accomplish from doing all of this.</p>
+            <ul>
+            <li>Challenge myself and others to learn new things.</li>
+            <li>Improve my ability to communicate as an educator.</li>
+            <li>Challenge my creativity as an engineer and a presenter.</li>
+            <li>Demonstrate <strong>God</strong> through all my work.</li>
+            </ul>
+            <p>Proverbs 14:23 - "In all toil there is profit, but mere talk tends only to poverty"</p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <script src="/modules/navbar/navbar.js"></script>
+  <script src="/modules/left-menu/left-menu.js"></script>
+</body>
+</html>
