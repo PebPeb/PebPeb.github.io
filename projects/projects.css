@@ -27,15 +27,7 @@
 }
 
 @media (max-width: 1200px) {
-	.left-menu {
-		display: none;
-	}
-  
-	.projects-container {
-    justify-content: center;
-		padding: 0;
-	}
-  
+
   .projects-article {
     padding-left: calc(((100% - var(--content-width))/2));
   }

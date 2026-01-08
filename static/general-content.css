@@ -6,7 +6,6 @@
 	box-sizing: border-box;
 }
 
-
 @font-face {
   font-family: DejaVuSerif;
   src: url(/assets/fonts/DejaVuSerif.ttf);
@@ -16,7 +15,6 @@
   font-family: DejaVuSerif-Bold;
   src: url(/assets/fonts/DejaVuSerif-Bold.ttf);
 }
-
 
 /*******************************************/
 /* Content Font Style */
@@ -111,3 +109,14 @@
   .spacing-div {
     height: 40px;
   }
+
+@media (max-width: 1200px) {
+	.projects-container {
+    justify-content: center;
+		padding: 0;
+	}
+
+  .general-article {
+    padding-left: calc(((100% - var(--content-width))/2));
+  }
+}
