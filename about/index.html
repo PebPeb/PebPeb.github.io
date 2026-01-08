@@ -4,38 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/static/style.css">
-  <link rel="stylesheet" type="text/css" href="/static/GeneralStyle.css">
+  <link rel="stylesheet" type="text/css" href="/static/general-content.css">
   <link rel="stylesheet" type="text/css" href="AboutPage.css">
 
   <title>Bryce Keen - About</title>
 </head>
-<body>
-  <div class="background-container">
-    <nav class="navbar" bar-title="Bryce Keen"></nav>
-
-
-    <div class="general-content">
-      <div style="background-color: #efefef;">
-      <NavBar />
-      <div class="about-content">
-        <h1>About</h1>
-        <img id="my-image" src="/assets/Keen-532.png"></img>
-        <p>
-          For the past few years, I've worked as a Computer Engineer on all different kinds of contracts, ranging from reverse engineering, embedded systems, FPGAs, and software integration. I've worked on things that fly in the sky and go boom! all the way down to invisible little data waves. Each project is a new challenge that pushes me to grow and become a better engineer.
-        </p>
-        <p>
-          One of the biggest things I'm passionate about is eduction. As a life long learner, I believe that we don't need to make the schooling process expensive or boring. We just need to add a little bit of life into it to showcase how fascinating the world is.
-        </p>
-        <p> 
-          My hope for this platform is for it to be more than just an archive for my projects. I want to inspire people to learn new things and challenge themselves. I want people to see that they can get joy out of what feels like a trivial project or solving a complicated problem. At the end of the day, I want people to know engineering can be fun. 
-        </p>
-        <p>
-          For now, my website is lacking a little bit of the fun.... But sit back and pull up your huggies, because the content is on its way!
-        </p>
+<body id="about">
+  <div class="background-container flex-column">
+    <div class="flex-row" style="height: 0; flex: 1;">
+      <div class="left-menu flex-row" style="background-color: rgb(255, 255, 255);"></div>
+      <div class="general-article flex-column">
+        <article class="content">
+          <h1>About</h1>
+          <img id="my-image" src="/assets/Keen-532.png"></img>
+          <p>
+            For the past few years, I've worked as a Computer Engineer on all different kinds of contracts, ranging from reverse engineering, embedded systems, FPGAs, and software integration. I've worked on things that fly in the sky and go boom! all the way down to invisible little data waves. Each project is a new challenge that pushes me to grow and become a better engineer.
+          </p>
+          <p>
+            One of the biggest things I'm passionate about is eduction. As a life long learner, I believe that we don't need to make the schooling process expensive or boring. We just need to add a little bit of life into it to showcase how fascinating the world is.
+          </p>
+          <p> 
+            My hope for this platform is for it to be more than just an archive for my projects. I want to inspire people to learn new things and challenge themselves. I want people to see that they can get joy out of what feels like a trivial project or solving a complicated problem. At the end of the day, I want people to know engineering can be fun. 
+          </p>
+          <p>
+            For now, my website is lacking a little bit of the fun.... But sit back and pull up your huggies, because the content is on its way!
+          </p>
+        </article>
       </div>
     </div>
   </div>
 
-  <script src="/modules/navbar/navbar.js"></script>
+  <script src="/modules/left-menu/left-menu.js"></script>
 </body>
 </html>
