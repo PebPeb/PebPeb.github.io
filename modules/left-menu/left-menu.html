@@ -1,9 +1,39 @@
 <link rel="stylesheet" type="text/css" href="/modules/left-menu/left-menu.css">
+<link rel="stylesheet" href="/static/fontawesome/all.min.css">
 
+<div class="left-menu flex-column">
+  <h1 class="title">Bryce Keen</h1>
+  <a href="/">
+    <h2 class="link-container"><i class="fa-regular fa-house"></i>  Home</h2>
+  </a>
+  <a href="/about/">
+    <h2 class="link-container"><i class="fa-regular fa-user"></i>  About</h2>
+  </a>
+  <a href="/contact/">
+    <h2 class="link-container"><i class="fa-regular fa-envelope"></i>  Contact</h2>
+  </a>
+  <h2 class="link-container"><i class="fa-regular fa-folder"></i>  Projects</h2>
 
-<div class="left-menu flex-row">
-  <div id="inputdiv">
-    <!-- <h1 id="search-title"></h1> -->
-    <input type="text" id="searchInput" placeholder="Search Posts & Projects">
-  </div>
+  <ul class="project-links">
+    <li class="project-sub-topic flex-column">
+      <h3>Computer Architecture</h3>
+      <div class="bar"></div>
+    </li>
+    <a href="https://github.com/PebPeb/Single-Cycle-RV32I">
+      <li><h4 class="link-container">RISC-V Single Cycle CPU</h4></li>
+    </a>
+    <a href="https://github.com/PebPeb/BEAN-1">
+      <li><h4 class="link-container">BEAN-1</h4></li>
+    </a>
+    <a href="https://github.com/PebPeb/BEAN-2">
+      <li><h4 class="link-container">BEAN-2</h4></li>
+    </a>
+    <li class="project-sub-topic flex-column">
+      <h3>Web Development</h3>
+      <div class="bar"></div>
+    </li>
+    <a href="/projects/brycekeencom/">
+      <li><h4 class="link-container">BryceKeen.com</h4></li>
+    </a>
+  </ul>
 </div>
