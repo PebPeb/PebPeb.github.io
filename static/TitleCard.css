@@ -8,9 +8,9 @@
 
 .title_003 {
     background-color: white;
-    position: relative;
+    /* position: relative; */
 
-    height: 200px;
+    min-height: 200px;
 
     background-position: center;
     background-repeat: no-repeat;

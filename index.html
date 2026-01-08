@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="/static/style.css">
-    <link rel="stylesheet" type="text/css" href="/static/GeneralStyle.css">
+    <link rel="stylesheet" type="text/css" href="/static/general-content.css">
     <link rel="stylesheet" type="text/css" href="/static/TitleCard.css">
     <link rel="stylesheet" type="text/css" href="/static/CardLandscape.css">
     <link rel="stylesheet" type="text/css" href="/static/HomePage.css">
@@ -14,94 +14,101 @@
     <title>Bryce Keen</title>
   </head>
   
-  <body>
-    <div class="background-container">
-      <nav class="navbar"></nav>
+  <body id="home">
+    <div class="background-container flex-column">
+      <div class="flex-row" style="height: 0; flex: 1;">
+        <div class="left-menu flex-row" style="background-color: rgb(255, 255, 255);"></div>
+        <div class="general-content flex-column">
 
-      <div class="title_003" style="background-image: url(assets/BlueCircuit.png); backgroundPosition: '0px 55%'">
-        <div class="blur">
-          <div class="logo left">
-            <div class="title">B<span class='letter-spacing'>r</span>yce Keen</div>
+
+          <!-- <nav class="navbar"></nav> -->
+          <div class="title_003" style="background-image: url(assets/BlueCircuit.png); backgroundPosition: '0px 55%'">
+            <div class="blur">
+              <div class="logo left">
+                <div class="title">B<span class='letter-spacing'>r</span>yce Keen</div>
+              </div>
+              
+              <div class="logo-link-bar">
+                <a class="logo-link" href="https://github.com/PebPeb">
+                  <i class="icon fa-brands fa-github"></i>
+                </a>
+                <a class="logo-link" href="https://www.linkedin.com/in/bryce-keen/">
+                  <i class="icon fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          
-          <div class="logo-link-bar">
-            <a class="logo-link" href="https://github.com/PebPeb">
-              <i class="icon fa-brands fa-github"></i>
-            </a>
-            <a class="logo-link" href="https://www.linkedin.com/in/bryce-keen/">
-              <i class="icon fa-brands fa-linkedin"></i>
-            </a>
+
+          <div class="flex-column">
+            <div class="spacing-div"></div>
+            <div class="card-landscape right">
+              <a href="https://github.com/PebPeb/BEAN-2" id="a-container" style="text-decoration: none;">
+                <img class="card-image" src="assets/BEAN-2_High_Level_Diagram.png"></img>
+              </a>
+              <div class="card-content-wrapper ligth">
+                <div class="card-content light">
+                  <h1>BEAN-2</h1>
+                  <p><span class="tab"></span>
+                      This project is a 32-bit, single core, 5-stage pipelined, RISC-V CPU (RV32I). The architectural design of this 
+                      system follows a Harvard style machine, separating the instruction and data memory. 
+                      This was an exciting challenge to develop from the design to verification.
+                  </p>
+                  <a href="#" style="text-decoration: none;">
+                    <a href="https://github.com/PebPeb/BEAN-2" class="button">Check It Out</a>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="spacing-div"></div>
+
+            <div class="card-landscape left">
+              <a href="https://github.com/PebPeb/BEAN-1" id="a-container" style="text-decoration: none;">
+                <img class="card-image" src="assets/BEAN-1.png"></img>
+              </a>
+              <div class="card-content-wrapper ligth">
+                <div class="card-content light">
+                  <h1>BEAN-1</h1>
+                  <p><span class="tab"></span>
+                      The BEAN-1 is a single core, RISC-V, 32 bit CPU. This CPU implements the base integer instruction set as defined
+                    by the RISC-V ISA (RV32I). The architectural design of the system follows a Von Neumann style machine using one
+                    shared memory between the instruction and data memory.
+                  </p>
+                  <a href="#" style="text-decoration: none;">
+                    <a href="https://github.com/PebPeb/BEAN-1" class="button">Check It Out</a>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="spacing-div"></div>
+            
+            <div class="card-landscape right">
+              <a href="https://github.com/PebPeb/Single-Cycle-RV32I" id="a-container" style="text-decoration: none;">
+                <div class="card-image" style="display: flex; justify-content: center; align-items: center;">
+                  <img src="/assets/SingleCycle.png" style="height: auto; width: 100%;"></img>
+                </div>
+              </a>
+              <div class="card-content-wrapper ligth">
+                <div class="card-content light">
+                  <h1>RISC-V Single Cycle CPU</h1>
+                  <p><span class="tab"></span>
+                      In this project I designed a single cycle CPU from scratch! I utilized the RV32I instruction set 
+                      for this project making my CPU a 32-bit computer. It might be primitive in design but she's my baby. 
+                      My hope is to use what I have learned from this project to explore more 
+                      complicated designs and ideas!
+                  </p>
+                  <a href="#" style="text-decoration: none;">
+                    <a href="https://github.com/PebPeb/Single-Cycle-RV32I" class="button">Check It Out</a>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="spacing-div"></div>
           </div>
         </div>
       </div>
-
-      <div class="general-content">
-        <div class="spacing-div"></div>
-        <div class="card-landscape right">
-          <a href="https://github.com/PebPeb/BEAN-2" id="a-container" style="text-decoration: none;">
-            <img class="card-image" src="assets/BEAN-2_High_Level_Diagram.png"></img>
-          </a>
-          <div class="card-content-wrapper ligth">
-            <div class="card-content light">
-              <h1>BEAN-2</h1>
-              <p><span class="tab"></span>
-                  This project is a 32-bit, single core, 5-stage pipelined, RISC-V CPU (RV32I). The architectural design of this 
-                  system follows a Harvard style machine, separating the instruction and data memory. 
-                  This was an exciting challenge to develop from the design to verification.
-              </p>
-              <a href="#" style="text-decoration: none;">
-                <a href="https://github.com/PebPeb/BEAN-2" class="button">Check It Out</a>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="spacing-div"></div>
-        <div class="card-landscape left">
-          <a href="https://github.com/PebPeb/BEAN-1" id="a-container" style="text-decoration: none;">
-            <img class="card-image" src="assets/BEAN-1.png"></img>
-          </a>
-          <div class="card-content-wrapper ligth">
-            <div class="card-content light">
-              <h1>BEAN-1</h1>
-              <p><span class="tab"></span>
-                  The BEAN-1 is a single core, RISC-V, 32 bit CPU. This CPU implements the base integer instruction set as defined
-                by the RISC-V ISA (RV32I). The architectural design of the system follows a Von Neumann style machine using one
-                shared memory between the instruction and data memory.
-              </p>
-              <a href="#" style="text-decoration: none;">
-                <a href="https://github.com/PebPeb/BEAN-1" class="button">Check It Out</a>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="spacing-div"></div>
-        
-        <div class="card-landscape right">
-          <a href="https://github.com/PebPeb/Single-Cycle-RV32I" id="a-container" style="text-decoration: none;">
-            <div class="card-image" style="display: flex; justify-content: center; align-items: center;">
-              <img src="/assets/SingleCycle.png" style="height: auto; width: 100%;"></img>
-            </div>
-          </a>
-          <div class="card-content-wrapper ligth">
-            <div class="card-content light">
-              <h1>RISC-V Single Cycle CPU</h1>
-              <p><span class="tab"></span>
-                  In this project I designed a single cycle CPU from scratch! I utilized the RV32I instruction set 
-                  for this project making my CPU a 32-bit computer. It might be primitive in design but she's my baby. 
-                  My hope is to use what I have learned from this project to explore more 
-                  complicated designs and ideas!
-              </p>
-              <a href="#" style="text-decoration: none;">
-                <a href="https://github.com/PebPeb/Single-Cycle-RV32I" class="button">Check It Out</a>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="spacing-div"></div>
-
-       </div>
     </div>
-
+    
+    <script src="/modules/left-menu/left-menu.js"></script>
     <script src="/modules/navbar/navbar.js"></script>
   </body>
 </html>
