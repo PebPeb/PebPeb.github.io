@@ -17,26 +17,6 @@ body {
   width: 100%;
 }
 
-/* Quick column defining */
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-/* Quick row defining */
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-
-.background-container {
-  height: 100vh;
-  width: 100%; 
-}
-
 @media screen and (max-width:420px) {
   .background-container {
     background-color: #ffffff;

@@ -2,15 +2,8 @@
   --content-width: 1020px;
 }
 
-
-.general-content {
-  max-width: 940px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.spacing-div {
-  height: 40px;
+* {
+	box-sizing: border-box;
 }
 
 
@@ -24,8 +17,67 @@
   src: url(/assets/fonts/DejaVuSerif-Bold.ttf);
 }
 
+
 /*******************************************/
-/* Content Style */
+/* Content Font Style */
+/*******************************************/
+
+  .background-container {
+    height: 100vh;
+    width: 100%; 
+  }
+
+  .general-content {
+    overflow-y: scroll;
+  }
+ 
+  #home .general-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  #home .card-landscape {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  /* Quick column defining */
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Quick row defining */
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+
+  .general-article {
+    width: 100%;
+    
+    overflow-y: scroll; /* Making article scroll not every thing else */
+    background-color: #efefef;;
+
+    /* Left padding keeps the content centered */
+    padding-left:  calc(((100% - var(--content-width))/2) - var(--projects-menu-width));
+  }
+
+  .general-article .content {
+    background-color: #ffffff;
+
+    width: 100%;
+    max-width: var(--content-width);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+/*******************************************/
+/* Content Font Style */
 /*******************************************/
 
   .content :is(h1, h2, h3, h4, h5, h6) {
@@ -45,7 +97,7 @@
     margin: 28.6px 0;
     font-size: 40px;
   }
-
+  
   postdate {
     font-size: 16px;
     font-family: DejaVuSerif-Bold;
@@ -55,3 +107,7 @@
   }
 
 /*******************************************/
+  
+  .spacing-div {
+    height: 40px;
+  }
