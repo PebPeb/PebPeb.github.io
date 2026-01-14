@@ -25,6 +25,15 @@
     width: 100%; 
   }
 
+  .base-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    height: 0; 
+    flex: 1;
+  }
+
   .general-content {
     overflow-y: scroll;
   }
@@ -111,12 +120,25 @@
   }
 
 @media (max-width: 1200px) {
-	.projects-container {
+	.base-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    height: 0; 
+    flex: 1;
+  }
+  
+  
+  .projects-container {
     justify-content: center;
 		padding: 0;
 	}
 
   .general-article {
     padding-left: calc(((100% - var(--content-width))/2));
+
+    height: 0; 
+    flex: 1;
   }
 }
