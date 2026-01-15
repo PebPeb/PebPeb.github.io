@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link rel="stylesheet" type="text/css" href="/static/general-content.css">
+  <link rel="stylesheet" type="text/css" href="/projects/projects.css">
+  <title>BK - BryceKeen.com</title>
+</head>
+<body id="projects">
+  <div class="background-container flex-column">
+
+    <!-- <nav class="navbar" bar-title="Bryce Keen"></nav> -->
+
+    <div class="base-container">
+      <div class="left-menu-container flex-row" style="background-color: rgb(255, 255, 255);"></div>
+      <div class="general-article flex-column">
+        <article class="content">
+          <section>
+
+            <div class="flex-row">
+              <p>Face Reveal!</p>
+              <div style="width: 30px;"></div>
+              <button id="face-reveal-btn"><p>Show ME!</p></button>
+            </div>
+            <p id="face-reveal-1" style="display: none;">Are you sure?</p>
+            <p id="face-reveal-2" style="display: none;">There is no going back</p>
+            <p id="face-reveal-3" style="display: none;">Okay here we go</p>
+            <p id="face-reveal-4" style="display: none;">Its coming</p>
+            <p id="face-reveal-5" style="display: none;">Drum role plz</p>
+            <img id="face-reveal-6" src="/assets/gigachad.png" alt="Me" style="width: 100%; display: none;">
+            <p id="face-reveal-7" style="display: none;">What more do you want from me?</p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
+  <script>
+    count = 0;
+    const btn = document.getElementById("face-reveal-btn");
+    btn.addEventListener("click", () => {
+      count += 1;
+      
+      if (count <= 7) {
+        showFR = document.getElementById("face-reveal-" + count);
+        showFR.style.display = "flex"
+      } 
+    });
+  </script>
+  <script src="/modules/left-menu/left-menu.js"></script>
+</body>
+</html>
